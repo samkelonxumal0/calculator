@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>SAMKELO's Calculator</title> 
+    <link rel="stylesheet" href="../SAMKELO/calculatorCSS.css">
+</head>
+
+<body> 
+    <div id="calculator"> 
+        <h1>SAMKELO's Calculator</h1> 
+        <table> 
+            <tr> 
+                <td colspan="4"> <input type="text" id="result" disabled> </td> 
+            </tr> 
+            <tr> 
+                <td><input type="button" value="7" onclick="appendToResult(7)"></td> 
+                <td><input type="button" value="8" onclick="appendToResult(8)"></td> 
+                <td><input type="button" value="9" onclick="appendToResult(9)"></td> 
+                <td><input type="button" value="/" onclick="appendToResult('/')"></td> 
+            </tr> 
+            
+            <tr> 
+                <td><input type="button" value="4" onclick="appendToResult(4)"></td>
+                <td><input type="button" value="5" onclick="appendToResult(5)"></td> 
+                <td><input type="button" value="6" onclick="appendToResult(6)"></td> 
+                <td><input type="button" value="*" onclick="appendToResult('*')"></td> 
+            </tr> 
+            
+            <tr> 
+                <td><input type="button" value="1" onclick="appendToResult(1)"></td> 
+                <td><input type="button" value="2" onclick="appendToResult(2)"></td> 
+                <td><input type="button" value="3" onclick="appendToResult(3)"></td> 
+                <td><input type="button" value="-" onclick="appendToResult('-')"></td> 
+            </tr> 
+                
+            <tr> 
+                <td><input type="button" value="0" onclick="appendToResult(0)"></td> 
+                <td><input type="button" value="." onclick="appendToResult('.')"></td> 
+                <td><input type="button" value="=" onclick="calculate()"></td> 
+                <td><input type="button" value="+" onclick="appendToResult('+')"></td> 
+            </tr> 
+
+            <tr> 
+                <td colspan="4"> 
+                    <input type="button" value="Clear" onclick="clearResult()"> 
+                </td> 
+            </tr> 
+        
+        </table> 
+    </div>
+
+    <script src="../SAMKELO/JaVaCalculator.js"></script>
+</body> 
+</html>
